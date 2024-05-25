@@ -1,0 +1,53 @@
+.assessments-list-content {
+.table
+{  
+    //  position: auto;
+    // overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px;
+        border-bottom: 1px solid #eee;
+
+    &-btn{
+    // width: 300px;
+    padding: 8px;
+    background: #202123;
+    color: #ffffff;
+    border: 1px solid #202123;
+    // border-radius: 23px 23px 23px 23px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.sort-btn{
+   .MuiFormLabel-root{
+    font-size: 14px;
+        top: -6px;
+
+   }
+   .MuiInputBase-root{
+    border-radius: 8px;
+
+   }
+   .MuiSelect-select{
+          padding: 8px 24px;
+
+   }
+}
+}
+
+
+  .table-btn{
+      background-color:  #272bc3;
+      padding: 8px 24px;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 14px;
+      width: fit-content;
+      border: none;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+
+}

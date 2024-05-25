@@ -1,0 +1,148 @@
+.signin {
+  display: flex;
+  &-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-card {
+      display: flex;
+      flex-direction: column;
+      background-color: #e3e8ee;
+      border-radius: 40px;
+      width: 320px;
+      height: 816px;
+      gap: 30px;
+      padding: 2vh 2vw;
+      margin-top: 100px;
+
+      .image {
+        align-self: center;
+        width: 132px;
+        height: 152px;
+      }
+      .section {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Aldrich';
+        gap: 10px;
+        &-title {
+          font-weight: bold;
+          font-size: 26px;
+          color: #35424a;
+        }
+        &-subtitle {
+          color: #8d93a7;
+          font-size: 16px;
+          text-align: left;
+        }
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .label-email {
+          color: #f85f6a;
+          font-family: 'Aldrich';
+          font-weight: 600;
+          font-size: 14px;
+        }
+        .email {
+        }
+        .label-pwd {
+          color: #f85f6a;
+          font-family: 'Aldrich';
+          font-weight: 600;
+          font-size: 14px;
+        }
+        .pwd {
+        }
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 20px;
+
+        gap: 18px;
+        &-main-btn {
+          width: 280px;
+          height: 48px;
+          box-shadow: 0px 5px 10px rgba(248, 95, 106, 0.23);
+          background: #f85f6a;
+          color: #ffffff;
+          border-radius: 6px 6px 6px 6px;
+          font-family: 'Aldrich';
+          font-weight: 600;
+          font-size: 17px;
+          &:hover {
+            background-color: #ffa3aa;
+          }
+        }
+
+        &-google-btn {
+          color: grey;
+          width: 280px;
+          height: 48px;
+          background-color: white;
+          &:hover {
+            background-color: white;
+          }
+          &-img {
+            width: 50px;
+            height: 45px;
+          }
+        }
+      }
+
+      .text {
+        padding-top: 83px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Aldrich';
+        font-weight: 550;
+
+        gap: 20px;
+
+        &-forgot-pwd {
+          text-decoration: underline;
+          color: #8d93a7;
+          font-size: 16px;
+          align-self: flex-end;
+        }
+
+        &-tt {
+          color: #8d93a7;
+        }
+        &-sign-up {
+          text-decoration: underline;
+
+          color: #35424a;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    gap: 30px;
+    &-img {
+      width: 530px;
+      height: 423px;
+    }
+    &-description {
+      color: #35424a;
+      text-align: center;
+    }
+  }
+}

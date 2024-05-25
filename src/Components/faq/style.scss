@@ -1,0 +1,24 @@
+
+ 
+  .faq-card{
+    border-radius: 4px;
+    background-color: #ffffffc9;
+    width: 100%;
+
+     .card-header {
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    // height: 100px;
+  
+      span{
+   font-weight: bold;
+      font-size: 16px;
+      }
+    .css-sgoict-MuiCardHeader-action {
+      align-self: center;
+    }
+  }
+
+  }
+

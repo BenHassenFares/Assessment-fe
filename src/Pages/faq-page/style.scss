@@ -1,0 +1,26 @@
+.faq-page {
+  display: flex;
+  height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #edf0f4;
+  padding: 100px 4vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 20px;
+  &-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.13;
+    color: #fff;
+  }
+  &-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.13;
+    color: #fff;
+  }
+}

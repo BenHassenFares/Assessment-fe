@@ -1,0 +1,99 @@
+.assessment-dialog {
+  padding: 20px;
+  &-title {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    .tab {
+      border: 1px solid #002b96;
+      color: #002b96;
+      width: 50%;
+      padding-left: 240px;
+      padding-right: 100px;
+      margin-top: 0px;
+      &.Mui-selected {
+        border-color: #002b96;
+        background-color: #002b96;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+  &-content {
+    &-first-tab {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      &-problem-card {
+        .problem-card-content {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+  
+      .question-type {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+  
+        &-title {
+          font-weight: bold;
+        }
+  
+        &-options {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          margin-right: 45px;
+        }
+      }
+  
+      &-left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .confirm-button {
+          width: 120px;
+          border-radius: 10px;
+          margin-left: 90px;
+        }
+      }
+  
+      &-right-side {
+        display: flex;
+        flex-direction: column;
+  
+        gap: 10px;
+        .problem-card-content-confirm-button {
+          margin-right: 50px;
+        }
+  
+        .option-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+          &-option-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+  
+      &-divider {
+        width: 1px;
+        height: 300px;
+        background-color: rgb(199, 199, 199);
+        align-self: center;
+      }
+      &-question-card-container {
+        display: flex;
+        justify-content: center;
+        padding: 1px;
+      }
+    }
+  }
+  
+}

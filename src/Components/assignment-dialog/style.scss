@@ -1,0 +1,13 @@
+.popup-content-row {
+  flex-direction: row;
+  display: flex;
+  &-p {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+.popup-content-dialog-title {
+  margin-left: 25px;
+  color: blue;
+  font-weight: bold;
+}

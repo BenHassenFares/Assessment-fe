@@ -1,0 +1,216 @@
+.home-page {
+  &-banner {
+    display: flex;
+    height: 100vh;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #edf0f4;
+    padding: 100px 4vw;
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 20px;
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #fff;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 5vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #fff;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span {
+  color: #fff;
+  font-weight: bold;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.9s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+
+  //   .title {
+  //     font-size: 52px;
+  // font-weight: bold;
+  // line-height: 1.27;
+  // color: #fff;
+  // text-align: center;
+      
+  //   }
+  //   .description {
+  //      font-size: 35px;
+  // font-weight: normal;
+  // line-height: 1.27;
+  // color: #fff;
+  //   text-align: center;
+
+  //   }
+    .main-btn {
+      background-image: linear-gradient(to right top, #051937, #002466, #002b96, #272bc3, #6612eb);
+      padding: 16px 24px;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 14px;
+      width: fit-content;
+      border: none;
+      font-weight: bold;
+    }
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 4vw;
+    // height: 500px;
+      background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+    &-title {
+  color: #171d22;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    &-subtitle {
+  color: #2f3842;
+      font-size: 22px;
+    }
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 20px;
+      .card {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+
+
+        &-list {
+          display: flex;
+          flex-direction: row;
+          padding-left: 90px;
+          padding-right: 90px;
+          padding-bottom: 30px;
+          align-items: center;
+          padding-top: 15px;
+          .CheckCircleIcon {
+            border-radius: 25px;
+            size: 200px;
+          }
+        }
+
+        &-title {
+          color: #3b4754;
+          font-size: 22px;
+          font-weight: 600;
+        }
+        &-subtitle {
+          color: #798da3;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: center;
+        }
+
+        .circle {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #002466;
+  box-shadow: 10px 10px rgba(0,0,0,.15);
+  transition: all .4s ease;
+  cursor: pointer;
+
+
+
+          
+          &:hover{
+            background-color: #002b96;
+            border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+          }
+          > span {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .divider {
+    background-color: #eef1f5;
+    height: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .typography-small{
+    text-align: right;
+    font-size: 14px;
+    color: #798da3;
+  }
+  .register-section{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+}

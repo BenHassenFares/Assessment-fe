@@ -1,0 +1,76 @@
+.slider-section{
+    margin: 0 auto;
+    padding: 100px 6vw;
+    .details-slick{
+  // width: 60vw;
+
+  .client-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    .desc{
+        text-align: center;
+  text-overflow: ellipsis;
+        overflow: hidden;
+white-space: nowrap;
+width: 80%;
+
+    }
+  }
+
+  .slick-list {
+    height: 100%;
+  }
+
+  .slick-arrow {
+    z-index: 9;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: rgb(0 0 0 / 0%);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .slick-prev {
+    z-index: 1;
+    left: -50px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-next {
+    z-index: 1;
+    right: -50px;
+    left: auto;
+
+    &::before {
+      display: none;
+    }
+  }
+.slick-slide{
+    padding: 0 5px;
+}
+  .slide-elements {
+    position: relative;
+    width: 100%;
+    background: #000;
+
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+}

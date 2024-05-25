@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Satoshi, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/satochi-font/Satoshi-Bold.woff2') format('woff2'),
+    url('fonts/satochi-font/Satoshi-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/satochi-font/Satoshi-Light.woff2') format('woff2'),
+    url('fonts/satochi-font/Satoshi-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/satochi-font/Satoshi-Medium.woff2') format('woff2'),
+    url('fonts/satochi-font/Satoshi-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Satoshi, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/satochi-font/Satoshi-Regular.woff2') format('woff2'),
+    url('fonts/satochi-font/Satoshi-Regular.woff') format('woff');
+  font-display: swap;
+}
+body,
+html {
+  margin: 0;
+  font-family: Satoshi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  &::-webkit-scrollbar {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    transition: all 400ms;
+    opacity: 1;
+  }
+
+  &::-webkit-scrollbar-track {
+    visibility: visible;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    opacity: 1;
+    background-color: #d0d0d0;
+    box-shadow: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    visibility: visible;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: #051937;
+    box-shadow: none;
+    background-clip: content-box;
+  }
+  /* 
+  &:hover {
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-thumb {
+      visibility: visible;
+      opacity: 1;
+    }
+  } */
+}
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */

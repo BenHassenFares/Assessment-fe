@@ -1,0 +1,49 @@
+.register-container {
+    align-items: center;
+    display: flex;
+    padding: 50px;
+    // background-color:#edf0f43e;
+    // background-color: red;
+   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: rgba(214, 214, 214, 0.41);
+  border-radius: 20px;
+
+    .register-card{
+        max-width: 500px;
+
+        .sign-btn{
+            // background-color: #002b96;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+    }
+    .register-paper {
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+  
+    }
+    .bg-text{
+        font-weight: bold;
+        color: #002b96;
+    }
+    .sm-text{
+        font-weight: 500;
+        color: #01123c;
+    }
+    .register-heading {
+    margin-bottom: 10px;
+    font-weight: bold;
+        color: #002b96;
+        font-size: 30px;
+    }
+    .register-terms {
+    display: flex;
+    align-items: center;
+   
+    }  }

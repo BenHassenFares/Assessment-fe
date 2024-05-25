@@ -1,0 +1,10 @@
+.question {
+  height: auto;
+  &-card {
+    width: 100%;
+    padding: 16px;
+  }
+}
+.option-label{
+  padding: 8px;
+}
